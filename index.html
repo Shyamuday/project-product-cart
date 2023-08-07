@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundle and Save Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="module" src="pair.js"></script>
+</head>
+<body>
+    
+<div class="main-container" >
+
+  <h1 class="heading-with-lines" >Bundle and Save</h1>
+  
+  <!-- Custom web component for 1 pair -->
+  <pair-element
+   no-of-options ="1"
+   pair-text="1 Pair"
+    original-price="DKK 195.00"
+    discount="50% off"
+ 
+  ></pair-element>
+
+  <!-- Custom web component for 2 pair (Most Popular) -->
+  <pair-element
+     no-of-options ="2"
+    pair-text="2 Pair"
+    original-price="DKK 345.00"
+    discounted-price="DKK 195.00"
+    discount="40% off"
+    most-popular
+   selected
+  ></pair-element>
+
+  <!-- Custom web component for 3 pair (reusable) -->
+  <pair-element
+     no-of-options ="3"
+    pair-text="3 Pair"
+    original-price="DKK 528.00"
+    discount="60% off"
+   
+  ></pair-element>
+
+
+  <div class="total-container">
+    <p class="free-shipping " >Free 2 Day Shipping</p>
+    <p class="total-price "><span class="total">Total :</span>  <span class="total-Price-value">DKK 360.00</span></p>
+  </div>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-container">
+   
+    <button>  <img src="/assets/plus-icon.png" alt="" class="plus-img"> Add to Cart</button>
+  </div>
+  <div class="powered-by ">
+   
+<p class="powered-by">
+  <img src="/assets/copyright.png" alt="" class="copyright-img">
+  Powered by Pumper
+</p>  </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* Add styles for the page */
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.main-container{
+ background: #FFFFFF;
+ display: flex;
+ flex-direction: column;
+ margin: auto;
+ max-width:450px;
+ padding-top:40px;
+ padding-left: 75px;
+ padding-right: 75px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #007F61;
+    font-family: Metropolis;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.heading-with-lines {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    color: #007f61;
+    font-weight: bold;
+}
+
+.heading-with-lines::before,
+.heading-with-lines::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: #C8C8C8;
+}
+
+.heading-with-lines::before {
+    right: 50%;
+    transform: translate(-100%, -50%);
+    width: 100px;
+}
+
+.heading-with-lines::after {
+    right: 0;
+    left: 50%;
+    transform: translate(100%, -50%);
+    width: 100px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the pair component */
+.main-content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    border-radius: 3.62px;
+    background: #FFFFFF;
+    border: 0.9px solid #C8C8C8;
+    color: #0e0b0b;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-container{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.pair-option {
+    padding: 25px;
+}
+
+.pair-text{
+    /* margin-left: 20px; */
+    font-weight: 400;
+    font-size: 14.46px;
+}
+
+
+.top-container{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+
+    align-items: center;
+
+}
+
+.left-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-content{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.pair-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    font-weight: 500;
+}
+
+
+.discounted-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 20px;
+    font-size: 14.46px;
+}
+.discount-percentage{
+    display: flex;
+    padding-right: 25px;
+    flex-direction: column;
+    font-size: 14.46px;
+}
+
+.most-popular-label {
+    color: #007F61;
+    padding: 4px;
+    font-size: 12.65px;
+    border-radius: 4px;
+}
+
+.color-option {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.plus-icon {
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+
+
+.add-to-cart-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.dropdown-main-container{
+    display: noneks;
+}
+
+/* Dropdown styles */
+
+.dropdown-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.dropdown-label {
+    display: flex;
+        margin-left: 60px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.dropdown{
+   margin: 3px 32px 3px 32px;
+}
+.dropdown-select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 13.36px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Additional elements */
+
+
+.total-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-shipping {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    opacity: 0.6;
+    color:  #007F61;;
+}
+
+.total-price {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    height: 17px;
+    padding-right: 25px;
+}
+
+.total{
+    font-weight: 400;
+}
+.total-Price-value{
+    font-weight: 500;
+}
+
+.add-to-cart-container button {
+    width: 100%;
+    height: 35px;
+    border-radius: 4px 4px 4px 0px;
+    background-color: #007F61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.plus-img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.powered-by {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.copyright-img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
